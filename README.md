@@ -34,6 +34,13 @@ Once up and running you will need to run smbpasswd to add user accounts.
 If your smb.conf doesn't point the password database to a mounted volume
 these accounts will be lost if the container is re-created.
 
+## Directories and files to put in a volume
+
+ - /etc/passwd
+ - /etc/group
+ - /etc/samba - config files
+ - /var/lib/samba - TDB files
+
 ## Time Machine
 
 The Samba in this container supports being configured as a destination for
