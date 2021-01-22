@@ -10,7 +10,7 @@ RUN \
   git clone https://github.com/samba-team/samba.git && \
   cd samba && \
   git checkout -q $TAG && \
-  ./configure --enable-fhs --prefix=/usr --sysconfdir=/etc --localstatedir=/var && \
+  ./configure --enable-fhs --prefix=/usr --sysconfdir=/etc --localstatedir=/var --with-profiling-data && \
   make && \
   make install && \
   cd .. && \
