@@ -6,7 +6,7 @@ net groupmap add sid=S-1-5-32-546 unixgroup=nobody type=builtin
 
 # /usr/sbin/nmbd -D
 # /usr/sbin/winbindd -D
-/usr/sbin/smbd -F -d 1 -P 2
+/usr/sbin/smbd --log-stdout --foreground --profiling-level2
 
 # Block container exit
 # tail -f /dev/null
